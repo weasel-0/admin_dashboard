@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.svg {
+  width: 32px;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  background-color: aquamarine;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+}
+
+.header {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: brown;
+}
+
+.sectionOne {
+  /* display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 12px; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.searchSec {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchBar {
+  height: 24px;
+  width: 800px;
+  margin-left: 24px;
+}
+
+.sidebar {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: blanchedalmond;
+}
+
+.cardSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  background-color: blue;
+}
+
+.cards {
+  grid-column: 1/2;
+  grid-row: auto;
+}
+
+.social {
+  grid-column: 2/3;
+  grid-row: auto;
+  background-color: blueviolet;
+}
