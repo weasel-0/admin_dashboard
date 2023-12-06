@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- <h1>Hello 👋</h1> -->
@@ -12,8 +18,13 @@
       <div class="header">
         <div class="sectionOne">
           <div class="searchSec">
-            <img src="./assets/magnify.svg" alt="search" class="svg" />
-            <input type="text" name="search_bar" id="searchBar" />
+            <!-- <img src="./assets/magnify.svg" alt="search" class="svg" /> -->
+            <input
+              type="text"
+              name="search_bar"
+              id="searchBar"
+              placeholder="search"
+            />
           </div>
           <div class="accountSec">
             <img src="./assets/bell-ring.svg" alt="notifications" class="svg" />
@@ -25,12 +36,209 @@
             <span>Random Dude</span>
           </div>
         </div>
-        <div class="sectionTwo"></div>
+        <div class="sectionTwo">
+          <div class="overview">
+            <img
+              src="./assets/account-circle.svg"
+              alt="account"
+              class="svg_big"
+            />
+            <div class="welcomeText">
+              <span>Hi there,</span>
+              <span>Random Dude(@random)</span>
+            </div>
+          </div>
+          <div class="btns">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
       </div>
-      <div class="sidebar"></div>
-      <div class="cardSection">
-        <div class="cards"></div>
-        <div class="social"></div>
+      <div class="sidebar">
+        <div class="dashboard">
+          <span>Dashboard</span>
+        </div>
+        <div class="sidebarSecOne">
+          <div class="sideContent">
+            <img
+              src="./assets/home-variant-outline.svg"
+              alt="home"
+              class="svg"
+            />Home
+          </div>
+          <div class="sideContent">
+            <img
+              src="./assets/card-account-details.svg"
+              alt="account details"
+              class="svg"
+            />Profile
+          </div>
+          <div class="sideContent">
+            <img
+              src="./assets/message-reply-outline.svg"
+              alt="message"
+              class="svg"
+            />Messages
+          </div>
+          <div class="sideContent">
+            <img
+              src="./assets/history.svg"
+              alt="your history"
+              class="svg"
+            />History
+          </div>
+          <div class="sideContent">
+            <img
+              src="./assets/checkbox-marked-circle-auto-outline.svg"
+              alt="your tasks"
+              class="svg"
+            />Tasks
+          </div>
+          <div class="sideContent">
+            <img
+              src="./assets/account-group.svg"
+              alt=" Communities you follow"
+              class="svg"
+            />Communities
+          </div>
+        </div>
+        <div class="sidebarSecTwo">
+          <div class="sideContent">
+            <img
+              src="./assets/cog-outline.svg"
+              alt="settings"
+              class="svg"
+            />Settings
+          </div>
+          <div class="sideContent">
+            <img src="./assets/lifebuoy.svg" alt="support" class="svg" />Support
+          </div>
+          <div class="sideContent">
+            <img src="./assets/shield.svg" alt="privacy" class="svg" />Privacy
+          </div>
+        </div>
+      </div>
+      <div class="mainSection">
+        <div class="cardSection">
+          <div class="card">
+            <p class="title">Lorem</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              eaque delectus, inventore voluptate, sed excepturi eos obcaecati
+              molestiae vitae laboriosam consequatur eveniet
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Lorem</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              eaque delectus, inventore voluptate, sed excepturi eos obcaecati
+              molestiae vitae laboriosam consequatur eveniet
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Lorem</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              eaque delectus, inventore voluptate, sed excepturi eos obcaecati
+              molestiae vitae laboriosam consequatur eveniet
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Lorem</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              eaque delectus, inventore voluptate, sed excepturi eos obcaecati
+              molestiae vitae laboriosam consequatur eveniet
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Lorem</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              eaque delectus, inventore voluptate, sed excepturi eos obcaecati
+              molestiae vitae laboriosam consequatur eveniet
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Lorem</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ut
+              eaque delectus, inventore voluptate, sed excepturi eos obcaecati
+              molestiae vitae laboriosam consequatur eveniet
+            </p>
+          </div>
+        </div>
+
+        <div class="trendingSection">
+          <span class="sectionTitle">Trending</span>
+          <div class="trendingProfiles">
+            <div class="profile">
+              <img
+                src="./assets/account-circle.svg"
+                alt="trendingGuy"
+                class="svg_big"
+              />
+              <div class="profileName">
+                <span>@Dude</span>
+                <span>Gardener</span>
+              </div>
+            </div>
+            <p class="about">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nisi aliquam,
+            </p>
+            <hr />
+            <div class="profile">
+              <img
+                src="./assets/account-circle.svg"
+                alt="trendingGuy"
+                class="svg_big"
+              />
+              <div class="profileName">
+                <span>@Dude</span>
+                <span>Gardener</span>
+              </div>
+            </div>
+            <p class="about">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nisi aliquam,
+            </p>
+            <hr />
+            <div class="profile">
+              <img
+                src="./assets/account-circle.svg"
+                alt="trendingGuy"
+                class="svg_big"
+              />
+              <div class="profileName">
+                <span>@Dude</span>
+                <span>Gardener</span>
+              </div>
+            </div>
+            <p class="about">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nisi aliquam,
+            </p>
+            <hr />
+            <div class="profile">
+              <img
+                src="./assets/account-circle.svg"
+                alt="trendingGuy"
+                class="svg_big"
+              />
+              <div class="profileName">
+                <span>@Dude</span>
+                <span>Gardener</span>
+              </div>
+            </div>
+            <p class="about">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              nobis, ex facere libero officiis saepe vitae sint, non voluptatem,
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

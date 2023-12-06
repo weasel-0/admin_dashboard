@@ -2,8 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
+body {
+  height: 100vh;
+  overflow: hidden;
+}
 .svg {
   width: 32px;
   height: auto;
@@ -11,27 +16,24 @@
 
 .container {
   display: grid;
-  background-color: aquamarine;
+  background-color: #f0f0f0;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
   height: 100vh;
 }
 
+/* Top header */
 .header {
   grid-column: 2/4;
   grid-row: 1/2;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: brown;
 }
 
 .sectionOne {
-  /* display: flex;
-  justify-content: space-around;
-  align-content: center;
-  margin-top: 12px; */
   display: grid;
   grid-template-columns: 3fr 1fr;
+  border-bottom: 1px solid black;
 }
 
 .searchSec {
@@ -42,31 +44,166 @@
 }
 
 #searchBar {
-  height: 24px;
-  width: 800px;
-  margin-left: 24px;
+  height: 32px;
+  width: 820px;
+  margin-left: 14px;
+  border: none;
+  padding-left: 10px;
+  background-color: rgba(207, 211, 214, 0.59);
 }
 
+.accountSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  border-left: 1px solid black;
+}
+
+.sectionTwo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.overview {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin-left: 64px;
+  border-right: 1px solid black;
+}
+.svg_big {
+  width: 72px;
+  height: auto;
+}
+
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+button {
+  width: 84px;
+  height: 32px;
+  background-color: #4fffaf;
+  border: 2px solid black;
+  color: black;
+  box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
+}
+
+/* sidebar */
 .sidebar {
   grid-column: 1/2;
   grid-row: 1/3;
-  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid black;
 }
 
-.cardSection {
+.dashboard {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: left;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.sidebarSecOne {
+  font-size: 18px;
+}
+
+.sideContent {
+  padding: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+
+/* main section */
+.mainSection {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
-  background-color: blue;
+  border-top: 1px solid black;
 }
 
-.cards {
+.cardSection {
   grid-column: 1/2;
-  grid-row: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 64px;
 }
 
-.social {
+.card {
+  height: 200px;
+  border: 2px solid black;
+  padding: 14px;
+  background-color: #fad85e;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.title {
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+/* trending section */
+.socialSection {
   grid-column: 2/3;
-  grid-row: auto;
-  background-color: blueviolet;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 64px;
+  border: 1px solid black;
+}
+
+.trendingSection {
+  grid-column: 2/3;
+
+  margin: 64px;
+  border: 2px solid black;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.trendingProfiles {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.profile {
+  display: flex;
+
+  align-items: center;
+}
+
+.profileName {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  padding-right: 20px;
+}
+.sectionTitle {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.about {
+  margin-bottom: 12px;
 }
